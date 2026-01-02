@@ -1,21 +1,21 @@
 # Homebrew Tap
 
-Personal Homebrew tap for brtkwr.
+Homebrew tap for agents-cli.
 
 ## Installation
 
 ```bash
-brew tap brtkwr/tap
+brew tap agents-cli/tap
 ```
 
 ## Packages
 
 | Formula | Description |
 |---------|-------------|
-| [ccs](https://github.com/brtkwr/ccs) | Search and resume Claude Code conversations using fzf |
+| [ccs](https://github.com/agents-cli/ccs) | Search and resume Claude Code conversations using fzf |
 
 ## Usage
 
 ```bash
-brew install brtkwr/tap/ccs
+brew install agents-cli/tap/ccs
 ```
