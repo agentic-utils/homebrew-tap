@@ -1,21 +1,21 @@
 # Homebrew Tap
 
-Homebrew tap for agentic-cli.
+Homebrew tap for agentic-utils.
 
 ## Installation
 
 ```bash
-brew tap agentic-cli/tap
+brew tap agentic-utils/tap
 ```
 
 ## Packages
 
 | Formula | Description |
 |---------|-------------|
-| [ccs](https://github.com/agentic-cli/ccs) | Search and resume Claude Code conversations using fzf |
+| [ccs](https://github.com/agentic-utils/ccs) | Search and resume Claude Code conversations using fzf |
 
 ## Usage
 
 ```bash
-brew install agentic-cli/tap/ccs
+brew install agentic-utils/tap/ccs
 ```
