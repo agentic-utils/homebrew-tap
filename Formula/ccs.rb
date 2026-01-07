@@ -13,7 +13,7 @@ class Ccs < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/agentic-utils/ccs/releases/download/v0.4.0/ccs_darwin_amd64.tar.gz"
-      sha256 "3036fa3b818d58393abf5ea622b4d5873c559391c57dafb0e3195fda44744fed"
+      sha256 "b5b2e7a73ce0b224480e99ba66ba0106e4973534cc60514aa468d9989967be2b"
 
       def install
         bin.install "ccs"
@@ -21,7 +21,7 @@ class Ccs < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/agentic-utils/ccs/releases/download/v0.4.0/ccs_darwin_arm64.tar.gz"
-      sha256 "0939e2a0e90da658be4c3d2d3923e03a3845b6544bdb08f22891e0545d3e9727"
+      sha256 "f7aa8db8670441ae41f2f1b500d4c3ee78547be10a46b4e88ef7e9f77baab62e"
 
       def install
         bin.install "ccs"
@@ -32,14 +32,14 @@ class Ccs < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/agentic-utils/ccs/releases/download/v0.4.0/ccs_linux_amd64.tar.gz"
-      sha256 "240b4b260cf9436155dda31bb556e1ab59c5d1770ac5ebcf92de0c2810d7a0bd"
+      sha256 "7a8a25da0f43f87e5c9e5f428683664da4378f93c8a4af2dd1c2d0adf1ee09db"
       def install
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/agentic-utils/ccs/releases/download/v0.4.0/ccs_linux_arm64.tar.gz"
-      sha256 "e7cadcfac2702f5b2b113bc9e407d832f713e059d304e02730b3efd4b342bfa4"
+      sha256 "02d32b5aa34b41886b0855347647359e4e349bbbd92ae163d8d58ffc9c5a9be0"
       def install
         bin.install "ccs"
       end
