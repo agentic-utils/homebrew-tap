@@ -5,23 +5,23 @@
 class Ccs < Formula
   desc "Search and resume Claude Code conversations using fzf"
   homepage "https://github.com/agentic-utils/ccs"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   depends_on "fzf"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.6.1/ccs_darwin_amd64.tar.gz"
-      sha256 "d7a3520655a9461248e5835bb57f1205dd4be3842d4cb79bad540b2b1c51f94b"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.7.0/ccs_darwin_amd64.tar.gz"
+      sha256 "964cb08275120f668c31a496c86e288e9b15ba43b8e83533b360d142722b2b83"
 
       def install
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.6.1/ccs_darwin_arm64.tar.gz"
-      sha256 "5c42b1eb682f9fa5a5ba2b417009f6121d1a8d9840064990bf090bb3bde43eb2"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.7.0/ccs_darwin_arm64.tar.gz"
+      sha256 "5a268f3b3e9db1d0727478780a6a7f5e50015d79cc5329031e5a87fda9abe79f"
 
       def install
         bin.install "ccs"
@@ -31,15 +31,15 @@ class Ccs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.6.1/ccs_linux_amd64.tar.gz"
-      sha256 "424aee5e2486b6f2802c209a93b3aa461a2fc5052fd10d3216177024c5aece0a"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.7.0/ccs_linux_amd64.tar.gz"
+      sha256 "4664003ebae5260caac6d6ddc0ce73d386ee1876bc3c4e3cf07ef03d53612525"
       def install
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.6.1/ccs_linux_arm64.tar.gz"
-      sha256 "209aa23f7e0ab0413bf1730c88819a3498c88b46db8b32c43e356c37ce9afee0"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.7.0/ccs_linux_arm64.tar.gz"
+      sha256 "eaf52294b34dd7b54ba785c20f9e7ba9264f9eb998b66d8d91d2a1f23975e243"
       def install
         bin.install "ccs"
       end
