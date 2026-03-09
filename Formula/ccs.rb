@@ -5,25 +5,25 @@
 class Ccs < Formula
   desc "Search and resume Claude Code conversations using fzf"
   homepage "https://github.com/agentic-utils/ccs"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   depends_on "fzf"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.9.0/ccs_darwin_amd64.tar.gz"
-      sha256 "5f22e2acb91842220385e4084de0bc2f448d9682fccc294264ed1c54df0b3adb"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.10.0/ccs_darwin_amd64.tar.gz"
+      sha256 "288471a7242318d6fd79e4a1b3178e4ac201524c06261fefc50d35749d80f1f1"
 
-      def install
+      define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.9.0/ccs_darwin_arm64.tar.gz"
-      sha256 "872e3a7821958cae9d18da920ab29cb9db0f57121704c3705a2c7af2e841d1f9"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.10.0/ccs_darwin_arm64.tar.gz"
+      sha256 "4df31ec5e45fb61743f1a5568dc834b6971255d7813d04857d8c16da2ea20f26"
 
-      def install
+      define_method(:install) do
         bin.install "ccs"
       end
     end
@@ -31,16 +31,16 @@ class Ccs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.9.0/ccs_linux_amd64.tar.gz"
-      sha256 "4e6fdd524f4845394d63a1be2a2ee536b620ddcab726e2ee9ff4e02efb73dc8b"
-      def install
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.10.0/ccs_linux_amd64.tar.gz"
+      sha256 "77c8072481b515b23eab03ae2222c593fe8f5e2e0beefa6076b947378bdee6ce"
+      define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.9.0/ccs_linux_arm64.tar.gz"
-      sha256 "fe57131067388ecc6f676abda38dc19c0285554c7296a952ecf89a62662e2092"
-      def install
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.10.0/ccs_linux_arm64.tar.gz"
+      sha256 "d8b89bd1e5ca2de87b2c81c28d6c609d12ab9dead3ece34a374b72ec822f559c"
+      define_method(:install) do
         bin.install "ccs"
       end
     end
