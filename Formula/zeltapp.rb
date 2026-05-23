@@ -5,21 +5,21 @@
 class Zeltapp < Formula
   desc "Unofficial CLI for the Zelt HR platform"
   homepage "https://github.com/agentic-utils/zeltapp-cli"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.2/zeltapp_darwin_amd64.tar.gz"
-      sha256 "2c3af4045a36b968f32dd63220503c745a2373c427b34d4e329b7a74570f04a3"
+      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.3/zeltapp_darwin_amd64.tar.gz"
+      sha256 "3f662d2cf1a12d83073e2429bf66341a1b5bc24d4ffbf6c53d361eeabc8f85c4"
 
       define_method(:install) do
         bin.install "zeltapp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.2/zeltapp_darwin_arm64.tar.gz"
-      sha256 "527dc04fb6d5250245b59f853fb19b823aa795029247173203a215cd0ef50e9e"
+      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.3/zeltapp_darwin_arm64.tar.gz"
+      sha256 "c99a3cc2980cd6b89bfe645f7768edc988c1a49a8eb52d76762c55575dbe25d5"
 
       define_method(:install) do
         bin.install "zeltapp"
@@ -29,15 +29,15 @@ class Zeltapp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.2/zeltapp_linux_amd64.tar.gz"
-      sha256 "a9dd716c9f6ca954abaf9a5ec5e91c0e7af9fb992a3f3289c906b8fcd333210e"
+      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.3/zeltapp_linux_amd64.tar.gz"
+      sha256 "4900a88847d9aa45d6be3784ca6f28f5bcae48c60ea8e3417552f3595ae2c43d"
       define_method(:install) do
         bin.install "zeltapp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.2/zeltapp_linux_arm64.tar.gz"
-      sha256 "1a2a02fb15518a5fdf10ecb8fa4e71f0add521452a7e302cfac7fe6bf1d40703"
+      url "https://github.com/agentic-utils/zeltapp-cli/releases/download/v0.0.3/zeltapp_linux_arm64.tar.gz"
+      sha256 "347eb34479bd536a298bd23b704266e31fc4a329c043484091e30bfdbdc8d92e"
       define_method(:install) do
         bin.install "zeltapp"
       end
