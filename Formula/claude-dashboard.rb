@@ -6,9 +6,9 @@ class ClaudeDashboard < Formula
 
   desc "Live terminal dashboard for Claude Code cache-token usage"
   homepage "https://github.com/agentic-utils/claude-dashboard"
-  url "https://github.com/agentic-utils/claude-dashboard/archive/refs/tags/v0.7.0.tar.gz"
-  version "0.7.0"
-  sha256 "55e0d725d4b8b4e08b3c08ce1b25b5ca97bf585750df0e42115da2a2bdd3e16d"
+  url "https://github.com/agentic-utils/claude-dashboard/archive/refs/tags/v0.7.1.tar.gz"
+  version "0.7.1"
+  sha256 "e61e07120f6d179273d4ea30ad8d3546fc0fc079994f55d12161c0d1159e6515"
 
   depends_on "python@3.13"
 
