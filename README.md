@@ -13,6 +13,7 @@ brew tap agentic-utils/tap
 | Formula | Description |
 |---------|-------------|
 | [ccs](https://github.com/agentic-utils/ccs) | Search and resume Claude Code conversations using fzf |
+| [claude-dashboard](https://github.com/agentic-utils/claude-dashboard) | Live terminal dashboard for Claude Code cache-token usage |
 
 ## Usage
 
