@@ -13,8 +13,10 @@ class ClaudeDashboard < Formula
   depends_on "python@3.13"
 
   def install
-    rewrite_shebang detected_python_shebang, "claude-dashboard.py"
-    bin.install "claude-dashboard.py" => "claude-dashboard"
+    # the script was renamed to an importable module name; accept either
+    script = File.exist?("claude_dashboard.py") ? "claude_dashboard.py" : "claude-dashboard.py"
+    rewrite_shebang detected_python_shebang, script
+    bin.install script => "claude-dashboard"
   end
 
   test do
