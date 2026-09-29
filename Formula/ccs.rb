@@ -5,21 +5,21 @@
 class Ccs < Formula
   desc "Search and resume Claude Code conversations"
   homepage "https://github.com/agentic-utils/ccs"
-  version "0.38.0"
+  version "0.38.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.0/ccs_darwin_amd64.tar.gz"
-      sha256 "4d0164755050a5616ea8a10601a1514696ec0f9b36bc729390ac5a3495614c4b"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.1/ccs_darwin_amd64.tar.gz"
+      sha256 "da75a278e583fbf1d8b53ec51fe4e3bcd8723efda3e0256bcd887c465cb9621f"
 
       define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.0/ccs_darwin_arm64.tar.gz"
-      sha256 "3b4f04b0f5f07b08d6fd86fb72a24cef2738605a99947f6cf9ff063e4269ea8f"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.1/ccs_darwin_arm64.tar.gz"
+      sha256 "cb4d2188267b1da9ef60fc3cf1a0a015ede9749e4293057944bc345eba92d8e2"
 
       define_method(:install) do
         bin.install "ccs"
@@ -29,15 +29,15 @@ class Ccs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.0/ccs_linux_amd64.tar.gz"
-      sha256 "3ef7c0aa74c5cde1abb3276e75e16032d998fb6cbd3e23f40987218c820cab45"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.1/ccs_linux_amd64.tar.gz"
+      sha256 "087f59b00804a06938afd9875ce5de3f976e8f6c7a4432b88926e600630133c4"
       define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.0/ccs_linux_arm64.tar.gz"
-      sha256 "5ef06efbed5e362989f7d81de59b5b95595e6a7cc1d9b9616426075d569b2921"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.38.1/ccs_linux_arm64.tar.gz"
+      sha256 "0f98a5cf102402204f0d36760f409e3b956599a265961a317e4d2338607362a8"
       define_method(:install) do
         bin.install "ccs"
       end
