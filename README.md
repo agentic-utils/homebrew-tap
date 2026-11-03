@@ -24,7 +24,7 @@ brew untap agentic-utils/tap                   # remove it again
 
 | Formula | Description |
 |---------|-------------|
-| [ccs](https://github.com/agentic-utils/ccs) | Search and resume Claude Code conversations using fzf |
+| [ccs](https://github.com/agentic-utils/ccs) | Coding CLI Sessions: launch, watch, search and resume Claude Code and Codex sessions |
 | [claude-dashboard](https://github.com/agentic-utils/claude-dashboard) | Live terminal dashboard for Claude Code cache-token usage |
 
 ## Usage
