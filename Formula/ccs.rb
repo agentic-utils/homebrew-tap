@@ -5,21 +5,21 @@
 class Ccs < Formula
   desc "Coding CLI Sessions: launch, watch, search and resume Claude Code and Codex sessions"
   homepage "https://github.com/agentic-utils/ccs"
-  version "0.125.0"
+  version "0.126.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.125.0/ccs_darwin_amd64.tar.gz"
-      sha256 "053432f0275c669b8ba31f85d2960ed8f4171a4122b4299ccb4f737b94d1d687"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.126.0/ccs_darwin_amd64.tar.gz"
+      sha256 "2a0a71e42c68088cc77e38c05281aafded36d881086d6d511dd8a2f131d363a0"
 
       define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.125.0/ccs_darwin_arm64.tar.gz"
-      sha256 "1afd62756c66ef906812ff8aa13dd2bfa1519d60112fe990eec25c06703e3190"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.126.0/ccs_darwin_arm64.tar.gz"
+      sha256 "aa2b0ff6750580f2af8347e2ff14ed1e06831bbc2e55ac5b0bef3db6a1880a9f"
 
       define_method(:install) do
         bin.install "ccs"
@@ -29,19 +29,26 @@ class Ccs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.125.0/ccs_linux_amd64.tar.gz"
-      sha256 "39311eba309ed41dbeeeea7132357477e9b6d83e92f7db8e923c349ffc8e6b14"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.126.0/ccs_linux_amd64.tar.gz"
+      sha256 "aadb4dad92b2827c7649e9abd30fc94fc831ca1a38c407684018cbe642fefcef"
       define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.125.0/ccs_linux_arm64.tar.gz"
-      sha256 "344b8d018846413c13740f8f96088a2a8a67ba645d1efdc78eb3fd6c1a53d839"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.126.0/ccs_linux_arm64.tar.gz"
+      sha256 "1d2d698b6c678b57c3616a1608417971067f9f0f436c8659761781135c52d425"
       define_method(:install) do
         bin.install "ccs"
       end
     end
+  end
+
+  def caveats
+    <<~EOS
+      On macOS, run this once so ccs://session/<name> links switch to that session's tab:
+        ccs link install
+    EOS
   end
 
   test do
