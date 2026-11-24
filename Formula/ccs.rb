@@ -5,21 +5,21 @@
 class Ccs < Formula
   desc "Coding CLI Sessions: launch, watch, search and resume Claude Code and Codex sessions"
   homepage "https://github.com/agentic-utils/ccs"
-  version "0.202.0"
+  version "0.202.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.0/ccs_darwin_amd64.tar.gz"
-      sha256 "b8abbbbdb24759953e71cddfb98dfdbea27abe703ec247644a81a6627b4a84cc"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.1/ccs_darwin_amd64.tar.gz"
+      sha256 "93a0219a1ed26597f9e4279d7f483ae6c0549901a2e4036410fca48775b7f4e8"
 
       define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.0/ccs_darwin_arm64.tar.gz"
-      sha256 "7a7c83750e1d4affdf216f22a1598ca71889c233375108b20754d6b9f49a61e1"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.1/ccs_darwin_arm64.tar.gz"
+      sha256 "fd630d509bc7b63ef95b6f5534ca17723b3254f1e7d8a4dfcd3831aa3b8e9f49"
 
       define_method(:install) do
         bin.install "ccs"
@@ -29,15 +29,15 @@ class Ccs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.0/ccs_linux_amd64.tar.gz"
-      sha256 "3029dc2fbb9ee06a88c2e38411d7d30dc24c0d362b712fb25035e0946960ecb7"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.1/ccs_linux_amd64.tar.gz"
+      sha256 "b73f54d7aa3776022d58bbd3fba57e1820d65b980103ba83576a955cd59bf788"
       define_method(:install) do
         bin.install "ccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.0/ccs_linux_arm64.tar.gz"
-      sha256 "422a6e10d835a668d393acb2a8ecaff8e0d11677dae6d95cc06954c3de100609"
+      url "https://github.com/agentic-utils/ccs/releases/download/v0.202.1/ccs_linux_arm64.tar.gz"
+      sha256 "9f2fa66f1c8b2fc5c12d342fcffe129ea2fe8b447a74652cd0bdd13910861778"
       define_method(:install) do
         bin.install "ccs"
       end
